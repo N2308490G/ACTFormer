@@ -190,7 +190,6 @@ Input Traffic → Complexity Analysis → Adaptive Vocab Selection → Traffic E
 
 ---
 
-
 ```bash
 # Clone repository
 git clone https://github.com/N2308490G/ACTFormer.git
@@ -204,76 +203,6 @@ pip install -e .
 ```
 
 **Requirements**: Python ≥ 3.8, PyTorch ≥ 1.10.0, PyTorch Geometric ≥ 2.0.0
-
----
-
-## Usage Example (After Release)
-
-```python
-from src.model import ACTFormer, ComplexityAnalyzer
-from src.data import TrafficDataset
-
-# Create ACTFormer model
-model = ACTFormer(
-    num_nodes=307,
-    d_model=64,
-    vocab_sizes=[128, 512, 1024],
-    complexity_weights={'alpha': 0.4, 'beta': 0.3, 'gamma': 0.3},
-    gumbel_tau=1.0
-)
-
-# Or use complexity analyzer separately
-analyzer = ComplexityAnalyzer(
-    alpha=0.4,  # Temporal variance weight
-    beta=0.3,   # Sample entropy weight
-    gamma=0.3   # Frequency characteristics weight
-)
-
-complexity_score = analyzer(traffic_data)
-```
-
-### Training (After Release)
-
-**Stage 1: Complexity-Aware Tokenization (150 epochs)**
-```bash
-python src/train_stage1.py \
-    --config configs/pems04.yaml \
-    --gpu 0 \
-    --epochs 150
-```
-
-**Stage 2: Forecasting Optimization (300 epochs)**
-```bash
-python src/train_stage2.py \
-    --config configs/pems04.yaml \
-    --pretrained checkpoints/pems04/stage1_best.pth \
-    --gpu 0 \
-    --epochs 300
-```
-
-### Evaluation (After Release)
-
-```bash
-# Evaluate single model
-python src/eval.py \
-    --config configs/pems04.yaml \
-    --checkpoint checkpoints/pems04/best_model.pth \
-    --save_results results/pems04_results.json
-
-# Reproduce all results
-bash scripts/reproduce_main_table.sh
-```
-
----
-
-If you find this work useful, please cite (once published):
-```bibtex
-@article{actformer2025,
-  title={ACTFormer: Adaptive Complexity-Aware Traffic Transformer for Intelligent Flow Prediction},
-  author={Anonymous Authors},
-  note={Under Review},
-  year={2025}
-}
 
 ---
 
