@@ -176,51 +176,6 @@ Input Traffic → Complexity Analysis → Adaptive Vocab Selection → Traffic E
 
 ---
 
-## Repository Structure
-
-Current structure (code to be released):
-
-```
-ACTFormer/
-├── README.md                    # This file
-├── LICENSE                      # MIT License
-├── requirements.txt             # Dependencies (will be added)
-├── configs/                     # Training configurations
-│   ├── pems04.yaml             # PeMS04 hyperparameters
-│   ├── pems07.yaml             # PeMS07 hyperparameters
-│   ├── pems08.yaml             # PeMS08 hyperparameters
-│   ├── nyctaxi_drop.yaml       # NYC-Taxi drop-off
-│   └── nyctaxi_pick.yaml       # NYC-Taxi pick-up
-├── src/                         # Core implementation (to be released)
-│   ├── model/
-│   │   ├── complexity_analyzer.py   # Entropy-based analysis
-│   │   ├── adaptive_vocab.py        # Gumbel-Softmax selection
-│   │   ├── traffic_encoder.py       # Traffic-aware encoding
-│   │   └── actformer.py            # Main model
-│   ├── data/
-│   │   ├── __init__.py             # Data loaders
-│   │   └── traffic_dataset.py      # Traffic dataset class
-│   ├── train_stage1.py             # Stage 1 training
-│   ├── train_stage2.py             # Stage 2 training
-│   └── eval.py                     # Evaluation script
-├── preprocess/                  # Data preprocessing
-│   ├── build_adj.py            # Build adjacency matrix
-│   ├── make_splits.py          # Create train/val/test splits
-│   └── normalize.py            # Z-score normalization
-├── scripts/                     # Reproduction scripts
-│   ├── reproduce_main_table.sh # Reproduce all results
-│   └── eval_all.sh             # Evaluate all models
-├── checkpoints/                 # Pre-trained models (to be released)
-│   └── README.md               # Download instructions
-└── logs/                        # Training logs
-    └── README.md               # Log structure
-```
-
----
-
-## Installation (After Release)
-
-Once code is released:
 
 ```bash
 # Clone repository
@@ -297,25 +252,20 @@ bash scripts/reproduce_main_table.sh
 
 ---
 
-## Citation
-
 If you find this work useful, please cite (once published):
-
 ```bibtex
 @article{actformer2025,
   title={ACTFormer: Adaptive Complexity-Aware Traffic Transformer for Intelligent Flow Prediction},
   author={Anonymous Authors},
-  journal={IEEE Transactions on Neural Networks and Learning Systems},
   note={Under Review},
   year={2025}
 }
-```
 
 ---
 
 ## Timeline
 
-- **[2024/12]** Paper submitted to IEEE TNNLS
+- **[2024/12]** Paper submitted (under double-blind review)
 - **[2024/12]** Repository structure created
 - **[TBD]** Paper acceptance notification
 - **[TBD]** Complete code release immediately upon publication
