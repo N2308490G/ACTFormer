@@ -1,0 +1,42 @@
+# Configuration for PEMS04 dataset
+
+dataset:
+  name: "PEMS04"
+  num_nodes: 307
+  input_dim: 3
+  output_dim: 1
+  seq_len: 12  # Input sequence length
+  horizon: 12  # Prediction horizon
+  
+data:
+  data_path: "data/PEMS04"
+  adj_path: "data/PEMS04/adj_mx.pkl"
+  batch_size: 64
+  num_workers: 4
+
+model:
+  name: "ACTFormer"
+  hidden_dim: 64
+  num_layers: 3
+  num_heads: 8
+  dropout: 0.1
+  use_adaptive_context: true
+  
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 15
+  grad_clip: 5.0
+  
+  # Stage-specific settings
+  stage1_epochs: 50
+  stage2_epochs: 50
+  
+checkpoint:
+  save_dir: "checkpoints/pems04"
+  save_best: true
+  
+logging:
+  log_dir: "logs/pems04"
+  log_interval: 10

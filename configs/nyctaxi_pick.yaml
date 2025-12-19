@@ -1,0 +1,41 @@
+# Configuration for NYC-Taxi Pick-up dataset
+
+dataset:
+  name: "NYCTaxi_Pick"
+  num_nodes: 266
+  input_dim: 2
+  output_dim: 1
+  seq_len: 12
+  horizon: 12
+  
+data:
+  data_path: "data/NYCTaxi"
+  adj_path: "data/NYCTaxi/adj_mx.pkl"
+  mode: "pick"
+  batch_size: 64
+  num_workers: 4
+
+model:
+  name: "ACTFormer"
+  hidden_dim: 64
+  num_layers: 3
+  num_heads: 8
+  dropout: 0.1
+  use_adaptive_context: true
+  
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 15
+  grad_clip: 5.0
+  stage1_epochs: 50
+  stage2_epochs: 50
+  
+checkpoint:
+  save_dir: "checkpoints/nyctaxi_pick"
+  save_best: true
+  
+logging:
+  log_dir: "logs/nyctaxi_pick"
+  log_interval: 10
