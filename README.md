@@ -1,9 +1,13 @@
 # ACTFormer: Adaptive Complexity-Aware Traffic Transformer for Intelligent Flow Prediction
 
-**Paper Status**: Under Review at IEEE TNNLS  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-ee4c2c.svg)](https://pytorch.org/)
+
+**Paper Status**: Under Review  
 **License**: MIT
 
-Official repository for "ACTFormer: Adaptive Complexity-Aware Traffic Transformer for Intelligent Flow Prediction" (Under review at IEEE Transactions on Neural Networks and Learning Systems).
+Official repository for "ACTFormer: Adaptive Complexity-Aware Traffic Transformer for Intelligent Flow Prediction" (Under review).
 
 ---
 
