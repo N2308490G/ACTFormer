@@ -279,8 +279,8 @@ If you find this work useful, please cite (once published):
 
 ## Timeline
 
-- **[2024/12]** Paper submitted (under double-blind review)
-- **[2024/12]** Repository structure created
+- **[2025/12]** Paper submitted (under double-blind review)
+- **[2025/12]** Repository structure created
 - **[TBD]** Paper acceptance notification
 - **[TBD]** Complete code release immediately upon publication
 
@@ -333,4 +333,4 @@ We thank:
 
 **License**: MIT License (permissive open-source)
 
-**Last Updated**: December 2024
+**Last Updated**: December 2025
