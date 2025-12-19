@@ -15,28 +15,38 @@ This repository currently maintains the project structure and documentation. Ful
 
 ### Why Code Is Not Yet Available
 
-In academic research, code release is subject to institutional policies and research integrity considerations. Our university's research office has established clear guidelines:
+#### 🚫 University Research Office Mandatory Policy
 
-#### 1. Academic Integrity and Research Protection
-Before formal publication, research has not undergone complete peer review. Premature code release could lead to:
-- Unauthorized use, modification, or misinterpretation
-- Compromise of research originality and credibility  
-- Risks to ongoing peer review integrity
+**Our university's research office has established strict regulations regarding code release for unpublished research:**
 
-#### 2. Intellectual Property and Priority Rights
-This work involves novel algorithms (entropy-based complexity analysis, Gumbel-Softmax adaptive vocabulary selection). Early release could:
-- Impact priority recognition in the field
-- Lead to intellectual property disputes
-- Affect proper academic attribution
+> **⚠️ Regulation**: All research code from unpublished papers is **strictly prohibited** from public release until formal publication.
 
-#### 3. Review Process Requirements
-Peer review may require experimental modifications. Pre-publication release could:
-- Create version discrepancies
-- Affect research reproducibility
-- Violate journal pre-publication policies
+> **📋 Code Release Procedure**:
+> 1. Paper must be **officially published** first
+> 2. Researcher submits **Code Release Application Form** to Research Office
+> 3. Application undergoes institutional review process
+> 4. Code can only be released **after approval is granted**
 
-#### 4. Institutional Regulations
-University policies govern research code management, especially for funded projects, requiring compliance with institutional standards.
+This is a **mandatory institutional requirement** that all researchers must comply with, regardless of personal preferences or academic norms in the field.
+
+#### Additional Considerations
+
+Beyond institutional requirements, several academic integrity factors also support delayed code release:
+
+**1. Academic Integrity and Research Protection**
+- Research has not undergone complete peer review
+- Premature release risks unauthorized use or misinterpretation
+- Protects ongoing peer review integrity
+
+**2. Intellectual Property and Priority Rights**
+- Novel algorithms (entropy-based complexity analysis, Gumbel-Softmax adaptive vocabulary selection)
+- Ensures proper priority recognition in the field
+- Prevents potential intellectual property disputes
+
+**3. Review Process Requirements**
+- Peer review may require experimental modifications
+- Avoids version discrepancies that affect reproducibility
+- Complies with journal pre-publication policies
 
 ---
 
